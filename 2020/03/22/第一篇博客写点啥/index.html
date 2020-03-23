@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>第一篇博客写点啥 | 逐梦老宅男</title><meta name="description" content="第一篇博客写点啥"><meta name="keywords" content="生活志"><meta name="author" content="逐梦老宅男"><meta name="copyright" content="逐梦老宅男"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/findyw/cdn@v1.1/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="第一篇博客写点啥"><meta name="twitter:description" content="第一篇博客写点啥"><meta name="twitter:image" content="https://images.hdqwalls.com/download/batman-and-deathstroke-4k-2020-1b-2880x1800.jpg"><meta property="og:type" content="article"><meta property="og:title" content="第一篇博客写点啥"><meta property="og:url" content="https://findyw.xyz/2020/03/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E5%86%99%E7%82%B9%E5%95%A5/"><meta property="og:site_name" content="逐梦老宅男"><meta property="og:description" content="第一篇博客写点啥"><meta property="og:image" content="https://images.hdqwalls.com/download/batman-and-deathstroke-4k-2020-1b-2880x1800.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="https://findyw.xyz/2020/03/22/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E5%86%99%E7%82%B9%E5%95%A5/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://findyw.xyz/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">逐梦老宅男</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/findyw/cdn/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">1</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#时隔一月，首篇博文它来了"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">时隔一月，首篇博文它来了</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#为何要写博客？"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">为何要写博客？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#最近在干些啥？"><span class="toc_mobile_items-number">1.2.</span> <span class="toc_mobile_items-text">最近在干些啥？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#有啥新计划？"><span class="toc_mobile_items-number">1.3.</span> <span class="toc_mobile_items-text">有啥新计划？</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#时隔一月，首篇博文它来了"><span class="toc-number">1.</span> <span class="toc-text">时隔一月，首篇博文它来了</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#为何要写博客？"><span class="toc-number">1.1.</span> <span class="toc-text">为何要写博客？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最近在干些啥？"><span class="toc-number">1.2.</span> <span class="toc-text">最近在干些啥？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有啥新计划？"><span class="toc-number">1.3.</span> <span class="toc-text">有啥新计划？</span></a></li></ol></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://images.hdqwalls.com/download/batman-and-deathstroke-4k-2020-1b-2880x1800.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">第一篇博客写点啥</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-03-22<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-03-23</time><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><html><head></head><body><h2 id="时隔一月，首篇博文它来了"><a href="#时隔一月，首篇博文它来了" class="headerlink" title="时隔一月，首篇博文它来了"></a>时隔一月，首篇博文它来了</h2><p>博客系统搭建与2020年02月22日，搭建的时候大概花了一两天的时间。我是从事后端工作的，对前端技术纯属爱好，不过搭建一个博客系统，相当于面向搜索引擎开发吧，信手拈来；不过终究还是要感谢提供优秀博客系统搭建教程的大佬们。</p>
+<h3 id="为何要写博客？"><a href="#为何要写博客？" class="headerlink" title="为何要写博客？"></a>为何要写博客？</h3><p>其实写博客的想法一直都有的，首先是因为自己从事互联网搬砖职业，博文相当于是技术积累的一种输出吧，对于找工作算是一个加分项（当然前提是写得东西还行）；再者是因为人总是善忘的，突然某天，发现自己没有动力了，没有激情了，能让自己回忆起当初奋斗的样子，不忘初心，砥砺前行。</p>
+<h3 id="最近在干些啥？"><a href="#最近在干些啥？" class="headerlink" title="最近在干些啥？"></a>最近在干些啥？</h3><p>大家都知道，2020年1月中旬，正值春节，爆发了一场极为恐怖的疫情，新冠状肺炎，疫情的严重性不用我多说了，很多地区都封城封路了，学生延迟开学，工厂延迟开工。不过好在全国人民的共同努力下，2月中下旬，很多省份疫情开始慢慢得到控制，很多公司已经开始慢慢复工，包括我们公司。所以我是在复工后的几周开始写的这篇博文。</p>
+<p>复工之前，我整天都在玩游戏，一天玩七八个小时，可能是出于报复性的心理吧，因为平时我工作，或者说工作日的时候我不玩游戏的，刚好这次放假那么长时间，索性就玩到吐。当然，我的愿望得逞了，不是因为我真的真的玩腻了，而是因为我觉得，是时候做出抉择了。因为说实话，我年纪也不小了，今年26岁了，存款无几，看着身边的朋友一个个买房买车，结婚生子，我是不是也得做点什么了；春节期间，双方家长见面，更加坚定了我的决心。状态切换，挣钱！！！</p>
+<p>说实话，挣钱这玩意并不是你说你认真，努力开始做，它就来了。所以我开始探索，除了主业在公司上班之外，闲暇时间能做什么副业能挣钱呢。技术人员通常是通过接外包的形式来赚外快的，但是万事开头难啊，首先人家凭什把东西给你做，你又没有成功案例，别人不信任你啊。再者，外包对我来说，只是planB。因为接外包，相当于你只是多付出了自己的时间和技术来换取金钱，短时间来说，可能会觉得还行。但是从长远来看，我觉得做自己的产品，才有可能有持续的收益，而且，我觉得这才是技术人渴望的，期待的结果。</p>
+<p>所以做啥产品呢？写了几年业务代码，说实话，并没有多少自己的想法，做产品还是没有头绪。偶然间，刷公众号文章看到有做小游戏的，自己了解下，发现门槛还行还行。早在几年前刚接触前端就有想法把自己小时候玩过的一个棋子类游戏做出来，碍于那时候技术渣，而且刚入行，感觉这玩意做出来了也没法推广，迟迟没行动。正好这次，奔着搞钱的目的，时候重启计划了。</p>
+<p>所以我最近在学ES6，学习微信小游戏，看官方教程，网上找教程，发现都是清一色的入门，多个教程加在一起貌似也完成不了我这个小游戏，也可能急于求成，也挺浮躁的，断断续续敲了一个月，工作日大概每天2小时，周末每天8小时；终于算是把棋盘和得分逻辑给完成了，但是要想发布，还早着呢，看着越来越复杂的代码，想加点东西都不知道怎么着手了。于是决定开始学Typescript，毕竟我后端用的是Java，用TypeScript开发应该会顺手些，所以，在开始学TS之前，记录一下。</p>
+<h3 id="有啥新计划？"><a href="#有啥新计划？" class="headerlink" title="有啥新计划？"></a>有啥新计划？</h3><ul>
+<li>拿下TS，为完成当前小游戏制作</li>
+<li>掌握游戏开发相关知识；场景、舞台、精灵……</li>
+<li>发布小游戏</li>
+</ul>
+<p>如果你看到了，监督我！谢谢</p>
+</body></html></div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%94%9F%E6%B4%BB%E5%BF%97/">生活志    </a></div><div class="post_share"><div class="social-share" data-image="https://images.hdqwalls.com/download/batman-and-deathstroke-4k-2020-1b-2880x1800.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'HzF4ytlYJtSMojxt2w0Hnqqn-gzGzoHsz',
+  appKey:'83s8bya46IKEOy4n6F1To4WC',
+  placeholder:'说点啥呗……',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By 逐梦老宅男</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/js/tw_cn.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
